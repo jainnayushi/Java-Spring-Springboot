@@ -1,0 +1,96 @@
+2023-07-07 09:29:23.042 [INFO ] c.a.E.EmployeeCompanyApplication - Starting EmployeeCompanyApplication using Java 17.0.7 with PID 21092 (C:\Users\Ayushi.Jain\IdeaProjects\Task1 - Logs Added\target\classes started by Ayushi.Jain in C:\Users\Ayushi.Jain\IdeaProjects\Task1 - Logs Added)
+2023-07-07 09:29:23.059 [INFO ] c.a.E.EmployeeCompanyApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-07 09:29:23.131 [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-07 09:29:23.132 [INFO ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-07 09:29:23.879 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-07 09:29:23.950 [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2023-07-07 09:29:24.679 [INFO ] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-07 09:29:24.692 [INFO ] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-07-07 09:29:24.692 [INFO ] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-07 09:29:24.763 [INFO ] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-07-07 09:29:24.764 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1631 ms
+2023-07-07 09:29:25.135 [INFO ] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-07 09:29:25.260 [INFO ] o.h.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-07 09:29:25.263 [INFO ] o.h.c.Environment - HHH000406: Using bytecode reflection optimizer
+2023-07-07 09:29:25.398 [INFO ] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-07-07 09:29:25.544 [INFO ] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-07 09:29:25.558 [INFO ] c.z.h.HikariDataSource - testdb - Starting...
+2023-07-07 09:29:25.883 [INFO ] c.z.h.p.HikariPool - testdb - Added connection com.mysql.cj.jdbc.ConnectionImpl@550f6369
+2023-07-07 09:29:25.885 [INFO ] c.z.h.HikariDataSource - testdb - Start completed.
+2023-07-07 09:29:26.105 [INFO ] o.h.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-07 09:29:26.417 [INFO ] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-07-07 09:29:27.151 [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-07 09:29:27.213 [WARN ] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table user add column user_id integer not null auto_increment" via JDBC [Incorrect table definition; there can be only one auto column and it must be defined as a key]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user add column user_id integer not null auto_increment" via JDBC [Incorrect table definition; there can be only one auto column and it must be defined as a key]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:333)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:291)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.assignment.EmployeeCompany.EmployeeCompanyApplication.main(EmployeeCompanyApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 43 common frames omitted
+2023-07-07 09:29:27.243 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 09:29:28.670 [INFO ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e6018b3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@543689ee, org.springframework.security.web.context.SecurityContextHolderFilter@5cb8e049, org.springframework.security.web.header.HeaderWriterFilter@77ecdabf, org.springframework.security.web.authentication.logout.LogoutFilter@767a01c8, com.assignment.EmployeeCompany.security.JwtAuthenticationFilter@520ee08e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47ea0cb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a28992e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39dcf887, org.springframework.security.web.session.SessionManagementFilter@326925bc, org.springframework.security.web.access.ExceptionTranslationFilter@189060ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20928354]
+2023-07-07 09:29:29.075 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-07 09:29:29.134 [INFO ] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-07 09:29:29.154 [INFO ] c.a.E.EmployeeCompanyApplication - Started EmployeeCompanyApplication in 6.597 seconds (process running for 7.064)
+2023-07-07 09:30:33.617 [INFO ] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07 09:30:33.617 [INFO ] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-07 09:30:33.618 [INFO ] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2023-07-07 09:30:33.630 [INFO ] o.s.w.f.OncePerRequestFilter -  Header :  null
+2023-07-07 09:30:33.631 [INFO ] o.s.w.f.OncePerRequestFilter - Invalid Header Value !! 
+2023-07-07 09:30:39.031 [INFO ] o.s.w.f.OncePerRequestFilter -  Header :  null
+2023-07-07 09:30:39.031 [INFO ] o.s.w.f.OncePerRequestFilter - Invalid Header Value !! 
+2023-07-07 09:30:47.973 [INFO ] o.s.w.f.OncePerRequestFilter -  Header :  null
+2023-07-07 09:30:47.973 [INFO ] o.s.w.f.OncePerRequestFilter - Invalid Header Value !! 
+2023-07-07 09:30:49.559 [INFO ] o.s.w.f.OncePerRequestFilter -  Header :  null
+2023-07-07 09:30:49.559 [INFO ] o.s.w.f.OncePerRequestFilter - Invalid Header Value !! 
+2023-07-07 09:31:03.723 [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 09:31:03.726 [INFO ] c.z.h.HikariDataSource - testdb - Shutdown initiated...
+2023-07-07 09:31:03.733 [INFO ] c.z.h.HikariDataSource - testdb - Shutdown completed.
